@@ -1,0 +1,6 @@
+{
+  "tailwindCSS.experimental.configFile": "../styles/styles.css",
+  "editor.quickSuggestions": {
+    "strings": true
+  }
+}
