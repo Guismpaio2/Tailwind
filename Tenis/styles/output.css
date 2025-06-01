@@ -14,20 +14,8 @@
   margin-bottom: 1.75rem;
 }
 
-.ml-4 {
-  margin-left: 1rem;
-}
-
-.mt-4 {
-  margin-top: 1rem;
-}
-
 .flex {
   display: flex;
-}
-
-.hidden {
-  display: none;
 }
 
 .h-\[540px\] {
@@ -142,11 +130,6 @@
 .text-5xl {
   font-size: 3rem;
   line-height: 1;
-}
-
-.text-sm {
-  font-size: 0.875rem;
-  line-height: 1.25rem;
 }
 
 .font-bold {
@@ -782,10 +765,6 @@ video {
 }
 
 @media (min-width: 768px) {
-  .md\:block {
-    display: block;
-  }
-
   .md\:w-1\/2 {
     width: 50%;
   }
