@@ -2,9 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Sora:wght@300;400;500;600&display=swap"
       rel="stylesheet"
@@ -13,127 +11,120 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
-
-    <link rel="stylesheet" href="../styles/output.css" />
+    <link
+      rel="stylesheet"
+      href="../styles/output.css
+    "
+    />
 
     <title>Dev House - Alugue ou compre sua casa</title>
   </head>
-  <body class="bg-slate-200">
+  <body class="bg-gray-700 font-sans">
     <div class="flex w-full">
       <!-- SIDEBAR -->
       <aside
-        class="border-r-2 hidden sm:flex w-full max-w-[200px] min-h-screen relative bg-white flex-col px-2 py-5"
+        class="hidden sm:flex w-full max-w-[220px] min-h-screen border-r bg-white flex-col px-4 py-6"
       >
         <div class="fixed">
-          <div>
-            <h1 class="text-rose-500 text-3xl font-bold">DevHouse</h1>
-          </div>
+          <h1 class="text-blue-600 text-3xl font-extrabold">DevHouse</h1>
 
-          <nav class="flex flex-col mt-8 w-full gap-5">
+          <nav class="flex flex-col mt-10 space-y-4 w-full">
             <a
               href="#"
-              class="tet-gray-500 font-medium hover:text-black hover:bg-gray-100 p-3 rounded-lg duration-300"
+              class="text-gray-600 font-semibold hover:text-blue-700 hover:bg-blue-100 px-4 py-2 rounded-lg transition duration-300"
+              >Aluguel</a
             >
-              Aluguel
-            </a>
             <a
               href="#"
-              class="tet-gray-500 font-medium hover:text-black hover:bg-gray-100 p-3 rounded-lg duration-300"
+              class="text-gray-600 font-semibold hover:text-blue-700 hover:bg-blue-100 px-4 py-2 rounded-lg transition duration-300"
+              >Compra</a
             >
-              Compra
-            </a>
             <a
               href="#"
-              class="tet-gray-500 font-medium hover:text-black hover:bg-gray-100 p-3 rounded-lg duration-300"
+              class="text-gray-600 font-semibold hover:text-blue-700 hover:bg-blue-100 px-4 py-2 rounded-lg transition duration-300"
+              >Serviços</a
             >
-              Serviços
-            </a>
             <a
               href="#"
-              class="tet-gray-500 font-medium hover:text-black hover:bg-gray-100 p-3 rounded-lg duration-300"
+              class="text-gray-600 font-semibold hover:text-blue-700 hover:bg-blue-100 px-4 py-2 rounded-lg transition duration-300"
+              >Contatos</a
             >
-              Contatos
-            </a>
           </nav>
         </div>
 
         <button
-          class="w-11 h-11 rounded-full bg-gray-100 fixed z-30 bottom-5 left-4 hover:bg-gray-300 duration-200"
+          class="fixed bottom-6 left-6 z-30 w-12 h-12 rounded-full bg-blue-100 hover:bg-blue-200 flex items-center justify-center transition duration-200"
         >
-          <i class="fa fa-phone" style="font-size: 16px"></i>
+          <i class="fa fa-phone text-blue-600 text-lg "></i>
         </button>
       </aside>
       <!-- FIM SIDEBAR -->
 
-      <main class="w-full flex flex-col pb-4">
+      <main class="flex flex-col w-full pb-6">
         <!-- MENU MOBILE -->
         <div
           id="menu"
-          class="absolute z-50 w-full hidden flex-col items-center px-3 py-2 bg-white shadow-xl justify-center"
+          class="absolute z-50 w-full hidden flex-col items-center px-6 py-4 bg-white shadow-lg justify-center"
         >
           <button
             id="btn-close"
             onclick="closeMenu()"
-            class="text-3xl text-bold mt-4"
+            class="text-3xl font-bold mt-4 fa fa-close"
+
           >
-            X
           </button>
-          <nav class="flex flex-col mt-8 gap-5 w-full">
+          <nav class="flex flex-col mt-10 space-y-4 w-full max-w-md text-center bg-gray-300 rounded-2xl">
             <a
               href="#"
-              class="tet-gray-500 font-medium hover:text-black hover:bg-gray-100 p-3 rounded-lg duration-300"
+              class="text-gray-600 font-semibold hover:text-blue-700 hover:bg-blue-100 px-4 py-2 rounded-lg transition duration-300"
+              >Aluguel</a
             >
-              Aluguel
-            </a>
             <a
               href="#"
-              class="tet-gray-500 font-medium hover:text-black hover:bg-gray-100 p-3 rounded-lg duration-300"
+              class="text-gray-600 font-semibold hover:text-blue-700 hover:bg-blue-100 px-4 py-2 rounded-lg transition duration-300"
+              >Compra</a
             >
-              Compra
-            </a>
             <a
               href="#"
-              class="tet-gray-500 font-medium hover:text-black hover:bg-gray-100 p-3 rounded-lg duration-300"
+              class="text-gray-600 font-semibold hover:text-blue-700 hover:bg-blue-100 px-4 py-2 rounded-lg transition duration-300"
+              >Serviços</a
             >
-              Serviços
-            </a>
             <a
               href="#"
-              class="tet-gray-500 font-medium hover:text-black hover:bg-gray-100 p-3 rounded-lg duration-300"
+              class="text-gray-600 font-semibold hover:text-blue-700 hover:bg-blue-100 px-4 py-2 rounded-lg transition duration-300"
+              >Contatos</a
             >
-              Contatos
-            </a>
           </nav>
         </div>
         <!-- FIM MENU MOBILE -->
 
         <!-- INICIO HEADER -->
         <header
-          class="bg-white w-full py-5 px-3 flex flex-row items-center justify-between"
+          class="bg-gray-400 w-full py-5 px-4 flex items-center justify-between shadow-sm"
         >
           <div
-            class="flex items-center bg-slate-100 px-3 py-2 w-full max-w-xs lg:max-w-[50%] rounded-lg lg:mr-8"
+            class="flex items-center bg-gray-200 px-4 py-3 w-full max-w-xs lg:max-w-[50%] rounded-lg lg:mr-8"
           >
-            <i class="fa fa-search text-gray-500" style="font-size: 16px"></i>
+            <i class="fa fa-search text-gray-500 text-base"></i>
             <input
               type="text"
-              class="w-full bg-slate-100 px-2 outline-none"
+              class="w-full bg-transparent px-3 outline-none placeholder-gray-500"
               placeholder="Procurando apartamento?"
             />
           </div>
 
-          <div class="flex gap-3 items-center">
+          <div class="flex items-center gap-4">
             <a
               href="#"
-              class="w-8 h-8 p-5 bg-slate-100 hidden md:flex items-center justify-center rounded-full"
+              class="hidden md:flex w-10 h-10 bg-gray-200 items-center justify-center rounded-full"
             >
-              <i class="fa fa-heart text-gray-500" style="font-size: 16px"></i>
+              <i class="fa fa-heart text-gray-600 text-base"></i>
             </a>
 
             <button
-              class="bg-rose-500 hover:bg-rose-600 duration-300 text-white flex items-center justify-center gap-2 px-4 py-2 rounded font-medium"
+              class="flex items-center gap-2 px-5 py-2 rounded-md bg-blue-600 hover:bg-blue-700 text-white font-semibold transition duration-300"
             >
-              <span class="hidden md:flex">Sign In</span>
+              <span class="hidden md:inline">Sign In</span>
               <i class="fa fa-user md:ml-1"></i>
             </button>
 
@@ -142,60 +133,64 @@
               onclick="openMenu()"
               class="sm:hidden flex items-center justify-center px-4 py-2"
             >
-              <i class="fa fa-bars" style="font-size: 24px"></i>
+              <i class="fa fa-bars text-2xl"></i>
             </button>
           </div>
         </header>
         <!-- FIM HEADER -->
 
         <!-- HOUSES -->
-        <section class="w-full px-3 lg:px-6">
-          <div class="flex w-full items-baseline justify-between">
-            <h1 class="font-bold text-3xl mt-4 mb-6">Compre ou alugue</h1>
-            <span class="hidden md:block text-gray-600"
+        <section class="w-full px-4 lg:px-8">
+          <div class="flex w-full items-baseline justify-between mb-6">
+            <h1 class="text-3xl font-extrabold text-white pt-3">
+              Compre ou alugue
+            </h1>
+            <span class="hidden md:block text-gray-500"
               >100 casas encontradas</span
             >
           </div>
 
-          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+          <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
             <!--HOUSE-->
             <a
               href="#"
-              class="bg-white p-3 rounded-lg min-h-[400px] relative flex flex-col hover:shadow-xl duration-300"
+              class="bg-white p-4 rounded-lg min-h-[400px] flex flex-col hover:shadow-2xl transition-shadow duration-300 relative"
             >
               <div>
-                <div class="group overflow-hidden rounded-lg">
-                  <div class="absolute z-40 top-5 left-5">
-                    <div
-                      class="flex bg-slate-50/70 group-hover:bg-white duration-300 self-start items-center justify-center gap-3 px-3 py-1 rounded-full"
-                    >
-                      <i class="fa fa-map" style="font-size: 12px"></i>
-                      <p class="font-medium text-sm">Campo Grande - MS</p>
-                    </div>
+                <div class="group relative overflow-hidden rounded-lg">
+                  <div
+                    class="absolute top-5 left-5 z-40 flex items-center gap-3 bg-white bg-opacity-70 group-hover:bg-opacity-90 px-3 py-1 rounded-full transition duration-300"
+                  >
+                    <i class="fa fa-map text-sm text-blue-600"></i>
+                    <p class="text-sm font-medium text-blue-700">
+                      Campo Grande - MS
+                    </p>
                   </div>
 
                   <img
                     src="assets/1.jpg"
                     alt="Casa"
-                    class="rounded-lg w-full h-64 object-cover group-hover:scale-110 duration-300"
+                    class="rounded-lg w-full h-64 object-cover group-hover:scale-110 transition-transform duration-300"
                   />
                 </div>
 
-                <div class="w-full flex flex-col gap-1 my-2">
-                  <h2 class="text-lg font-bold">Apartamento grande</h2>
+                <div class="mt-3 flex flex-col gap-1">
+                  <h2 class="text-lg font-bold text-gray-900">
+                    Apartamento grande
+                  </h2>
                   <div>
-                    <p class="text-gray-600 line-through text-sm">
+                    <p class="line-through text-sm text-gray-400">
                       R$ 3.000/mês
                     </p>
-                    <p class="my-1 font-bold text-indigo-500">R$ 2.200/mês</p>
+                    <p class="text-blue-600 font-bold my-1">R$ 2.200/mês</p>
                   </div>
                 </div>
               </div>
 
-              <div class="mt-auto">
-                <span class="font-medium text-sm">100 mts -</span>
-                <span class="font-medium text-sm">3 quartos -</span>
-                <span class="font-medium text-sm">2 banheiros</span>
+              <div class="mt-auto flex gap-2 text-sm font-medium text-gray-700">
+                <span>100 mts -</span>
+                <span>3 quartos -</span>
+                <span>2 banheiros</span>
               </div>
             </a>
             <!--FIM HOUSE-->
@@ -203,41 +198,43 @@
             <!--HOUSE-->
             <a
               href="#"
-              class="bg-white p-3 rounded-lg min-h-[400px] relative flex flex-col hover:shadow-xl duration-300"
+              class="bg-white p-4 rounded-lg min-h-[400px] flex flex-col hover:shadow-2xl transition-shadow duration-300 relative"
             >
               <div>
-                <div class="group overflow-hidden rounded-lg">
-                  <div class="absolute z-40 top-5 left-5">
-                    <div
-                      class="flex bg-slate-50/70 group-hover:bg-white duration-300 self-start items-center justify-center gap-3 px-3 py-1 rounded-full"
-                    >
-                      <i class="fa fa-map" style="font-size: 12px"></i>
-                      <p class="font-medium text-sm">Meia Praia - SC</p>
-                    </div>
+                <div class="group relative overflow-hidden rounded-lg">
+                  <div
+                    class="absolute top-5 left-5 z-40 flex items-center gap-3 bg-white bg-opacity-70 group-hover:bg-opacity-90 px-3 py-1 rounded-full transition duration-300"
+                  >
+                    <i class="fa fa-map text-sm text-blue-600"></i>
+                    <p class="text-sm font-medium text-blue-700">
+                      Meia Praia - SC
+                    </p>
                   </div>
 
                   <img
                     src="assets/2.jpg"
                     alt="Casa"
-                    class="rounded-lg w-full h-64 object-cover group-hover:scale-110 duration-300"
+                    class="rounded-lg w-full h-64 object-cover group-hover:scale-110 transition-transform duration-300"
                   />
                 </div>
 
-                <div class="w-full flex flex-col gap-1 my-2">
-                  <h2 class="text-lg font-bold">Apartamento praia</h2>
+                <div class="mt-3 flex flex-col gap-1">
+                  <h2 class="text-lg font-bold text-gray-900">
+                    Apartamento praia
+                  </h2>
                   <div>
-                    <p class="text-gray-600 line-through text-sm">
+                    <p class="line-through text-sm text-gray-400">
                       R$ 5.000/mês
                     </p>
-                    <p class="my-1 font-bold text-indigo-500">R$ 3.200/mês</p>
+                    <p class="text-blue-600 font-bold my-1">R$ 3.200/mês</p>
                   </div>
                 </div>
               </div>
 
-              <div class="mt-auto">
-                <span class="font-medium text-sm">160 mts -</span>
-                <span class="font-medium text-sm">4 quartos -</span>
-                <span class="font-medium text-sm">2 banheiros</span>
+              <div class="mt-auto flex gap-2 text-sm font-medium text-gray-700">
+                <span>50 mts -</span>
+                <span>2 quartos -</span>
+                <span>1 banheiro</span>
               </div>
             </a>
             <!--FIM HOUSE-->
@@ -245,41 +242,43 @@
             <!--HOUSE-->
             <a
               href="#"
-              class="bg-white p-3 rounded-lg min-h-[400px] relative flex flex-col hover:shadow-xl duration-300"
+              class="bg-white p-4 rounded-lg min-h-[400px] flex flex-col hover:shadow-2xl transition-shadow duration-300 relative"
             >
               <div>
-                <div class="group overflow-hidden rounded-lg">
-                  <div class="absolute z-40 top-5 left-5">
-                    <div
-                      class="flex bg-slate-50/70 group-hover:bg-white duration-300 self-start items-center justify-center gap-3 px-3 py-1 rounded-full"
-                    >
-                      <i class="fa fa-map" style="font-size: 12px"></i>
-                      <p class="font-medium text-sm">Meia Praia - SC</p>
-                    </div>
+                <div class="group relative overflow-hidden rounded-lg">
+                  <div
+                    class="absolute top-5 left-5 z-40 flex items-center gap-3 bg-white bg-opacity-70 group-hover:bg-opacity-90 px-3 py-1 rounded-full transition duration-300"
+                  >
+                    <i class="fa fa-map text-sm text-blue-600"></i>
+                    <p class="text-sm font-medium text-blue-700">
+                      Copacabana - RJ
+                    </p>
                   </div>
 
                   <img
                     src="assets/3.jpg"
                     alt="Casa"
-                    class="rounded-lg w-full h-64 object-cover group-hover:scale-110 duration-300"
+                    class="rounded-lg w-full h-64 object-cover group-hover:scale-110 transition-transform duration-300"
                   />
                 </div>
 
-                <div class="w-full flex flex-col gap-1 my-2">
-                  <h2 class="text-lg font-bold">Apartamento praia</h2>
+                <div class="mt-3 flex flex-col gap-1">
+                  <h2 class="text-lg font-bold text-gray-900">
+                    Apartamento moderno
+                  </h2>
                   <div>
-                    <p class="text-gray-600 line-through text-sm">
-                      R$ 5.000/mês
+                    <p class="line-through text-sm text-gray-400">
+                      R$ 4.000/mês
                     </p>
-                    <p class="my-1 font-bold text-indigo-500">R$ 3.200/mês</p>
+                    <p class="text-blue-600 font-bold my-1">R$ 3.200/mês</p>
                   </div>
                 </div>
               </div>
 
-              <div class="mt-auto">
-                <span class="font-medium text-sm">160 mts -</span>
-                <span class="font-medium text-sm">4 quartos -</span>
-                <span class="font-medium text-sm">2 banheiros</span>
+              <div class="mt-auto flex gap-2 text-sm font-medium text-gray-700">
+                <span>70 mts -</span>
+                <span>2 quartos -</span>
+                <span>1 banheiro</span>
               </div>
             </a>
             <!--FIM HOUSE-->
@@ -287,41 +286,43 @@
             <!--HOUSE-->
             <a
               href="#"
-              class="bg-white p-3 rounded-lg min-h-[400px] relative flex flex-col hover:shadow-xl duration-300"
+              class="bg-white p-4 rounded-lg min-h-[400px] flex flex-col hover:shadow-2xl transition-shadow duration-300 relative"
             >
               <div>
-                <div class="group overflow-hidden rounded-lg">
-                  <div class="absolute z-40 top-5 left-5">
-                    <div
-                      class="flex bg-slate-50/70 group-hover:bg-white duration-300 self-start items-center justify-center gap-3 px-3 py-1 rounded-full"
-                    >
-                      <i class="fa fa-map" style="font-size: 12px"></i>
-                      <p class="font-medium text-sm">Meia Praia - SC</p>
-                    </div>
+                <div class="group relative overflow-hidden rounded-lg">
+                  <div
+                    class="absolute top-5 left-5 z-40 flex items-center gap-3 bg-white bg-opacity-70 group-hover:bg-opacity-90 px-3 py-1 rounded-full transition duration-300"
+                  >
+                    <i class="fa fa-map text-sm text-blue-600"></i>
+                    <p class="text-sm font-medium text-blue-700">
+                      São Paulo - SP
+                    </p>
                   </div>
 
                   <img
                     src="assets/4.jpg"
                     alt="Casa"
-                    class="rounded-lg w-full h-64 object-cover group-hover:scale-110 duration-300"
+                    class="rounded-lg w-full h-64 object-cover group-hover:scale-110 transition-transform duration-300"
                   />
                 </div>
 
-                <div class="w-full flex flex-col gap-1 my-2">
-                  <h2 class="text-lg font-bold">Apartamento praia</h2>
+                <div class="mt-3 flex flex-col gap-1">
+                  <h2 class="text-lg font-bold text-gray-900">
+                    Apartamento sofisticado
+                  </h2>
                   <div>
-                    <p class="text-gray-600 line-through text-sm">
-                      R$ 5.000/mês
+                    <p class="line-through text-sm text-gray-400">
+                      R$ 7.000/mês
                     </p>
-                    <p class="my-1 font-bold text-indigo-500">R$ 3.200/mês</p>
+                    <p class="text-blue-600 font-bold my-1">R$ 5.400/mês</p>
                   </div>
                 </div>
               </div>
 
-              <div class="mt-auto">
-                <span class="font-medium text-sm">160 mts -</span>
-                <span class="font-medium text-sm">4 quartos -</span>
-                <span class="font-medium text-sm">2 banheiros</span>
+              <div class="mt-auto flex gap-2 text-sm font-medium text-gray-700">
+                <span>80 mts -</span>
+                <span>3 quartos -</span>
+                <span>2 banheiros</span>
               </div>
             </a>
             <!--FIM HOUSE-->
@@ -329,83 +330,43 @@
             <!--HOUSE-->
             <a
               href="#"
-              class="bg-white p-3 rounded-lg min-h-[400px] relative flex flex-col hover:shadow-xl duration-300"
+              class="bg-white p-4 rounded-lg min-h-[400px] flex flex-col hover:shadow-2xl transition-shadow duration-300 relative"
             >
               <div>
-                <div class="group overflow-hidden rounded-lg">
-                  <div class="absolute z-40 top-5 left-5">
-                    <div
-                      class="flex bg-slate-50/70 group-hover:bg-white duration-300 self-start items-center justify-center gap-3 px-3 py-1 rounded-full"
-                    >
-                      <i class="fa fa-map" style="font-size: 12px"></i>
-                      <p class="font-medium text-sm">Meia Praia - SC</p>
-                    </div>
+                <div class="group relative overflow-hidden rounded-lg">
+                  <div
+                    class="absolute top-5 left-5 z-40 flex items-center gap-3 bg-white bg-opacity-70 group-hover:bg-opacity-90 px-3 py-1 rounded-full transition duration-300"
+                  >
+                    <i class="fa fa-map text-sm text-blue-600"></i>
+                    <p class="text-sm font-medium text-blue-700">
+                      Florianópolis - SC
+                    </p>
                   </div>
 
                   <img
                     src="assets/5.jpg"
                     alt="Casa"
-                    class="rounded-lg w-full h-64 object-cover group-hover:scale-110 duration-300"
+                    class="rounded-lg w-full h-64 object-cover group-hover:scale-110 transition-transform duration-300"
                   />
                 </div>
 
-                <div class="w-full flex flex-col gap-1 my-2">
-                  <h2 class="text-lg font-bold">Apartamento praia</h2>
+                <div class="mt-3 flex flex-col gap-1">
+                  <h2 class="text-lg font-bold text-gray-900">
+                    Apartamento vista mar
+                  </h2>
                   <div>
-                    <p class="text-gray-600 line-through text-sm">
-                      R$ 5.000/mês
+                    <p class="line-through text-sm text-gray-400">
+                      R$ 7.000/mês
                     </p>
-                    <p class="my-1 font-bold text-indigo-500">R$ 3.200/mês</p>
+                    <p class="text-blue-600 font-bold my-1">R$ 5.400/mês</p>
                   </div>
                 </div>
               </div>
 
-              <div class="mt-auto">
-                <span class="font-medium text-sm">160 mts -</span>
-                <span class="font-medium text-sm">4 quartos -</span>
-                <span class="font-medium text-sm">2 banheiros</span>
-              </div>
-            </a>
-            <!--FIM HOUSE-->
-
-            <!--HOUSE-->
-            <a
-              href="#"
-              class="bg-white p-3 rounded-lg min-h-[400px] relative flex flex-col hover:shadow-xl duration-300"
-            >
-              <div>
-                <div class="group overflow-hidden rounded-lg">
-                  <div class="absolute z-40 top-5 left-5">
-                    <div
-                      class="flex bg-slate-50/70 group-hover:bg-white duration-300 self-start items-center justify-center gap-3 px-3 py-1 rounded-full"
-                    >
-                      <i class="fa fa-map" style="font-size: 12px"></i>
-                      <p class="font-medium text-sm">Meia Praia - SC</p>
-                    </div>
-                  </div>
-
-                  <img
-                    src="assets/6.jpg"
-                    alt="Casa"
-                    class="rounded-lg w-full h-64 object-cover group-hover:scale-110 duration-300"
-                  />
-                </div>
-
-                <div class="w-full flex flex-col gap-1 my-2">
-                  <h2 class="text-lg font-bold">Apartamento praia</h2>
-                  <div>
-                    <p class="text-gray-600 line-through text-sm">
-                      R$ 5.000/mês
-                    </p>
-                    <p class="my-1 font-bold text-indigo-500">R$ 3.200/mês</p>
-                  </div>
-                </div>
-              </div>
-
-              <div class="mt-auto">
-                <span class="font-medium text-sm">160 mts -</span>
-                <span class="font-medium text-sm">4 quartos -</span>
-                <span class="font-medium text-sm">2 banheiros</span>
+              <div class="mt-auto flex gap-2 text-sm font-medium text-gray-700">
+                <span>80 mts -</span>
+                <span>3 quartos -</span>
+                <span>2 banheiros</span>
               </div>
             </a>
             <!--FIM HOUSE-->
@@ -414,6 +375,6 @@
       </main>
     </div>
 
-    <script type="text/javascript" src="script.js"></script>
+    <script src="script.js"></script>
   </body>
 </html>
